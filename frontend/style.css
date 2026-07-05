@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 14px;
+  margin-top: -8px;
+}
+
+#movie-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+#movie-form input {
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-width: 120px;
+}
+
+#movie-form button {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #2f6feb;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#movie-form button:hover {
+  background-color: #1d4fbe;
+}
+
+#status-message {
+  color: #b3261e;
+  min-height: 20px;
+  font-size: 14px;
+}
+
+#movie-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.movie {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.movie.watched .movie-info {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.movie-actions button {
+  margin-left: 6px;
+  padding: 4px 10px;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fafafa;
+  cursor: pointer;
+}
+
+.movie-actions button:hover {
+  background-color: #eee;
+}
+
+.empty-message {
+  color: #888;
+  padding: 10px 0;
+}
